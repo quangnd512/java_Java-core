@@ -1,0 +1,10 @@
+Viết chương trình quản lý cán bộ:
+Tạo lớp CanBo với các thuộc tính: Họ tên, năm sinh, giới tính, địa chỉ.
+Tạo lớp CongNhan kế thừa từ CanBo với thuộc tính: bậc lương.
+Tạo lớp KySu kế thừa từ CanBo với thuộc tính: ngành đào tạo.
+Tạo lớp NVPhucVu kế thừa từ CanBo với thuộc tính: công việc.
+
+Tạo lớp main với các chức năng sau: 
+	1. Nhập thông tin cán bộ.
+	2. Hiển thị thông tin cán bộ.
+	3. Tìm kiếm thông tin cán bộ.

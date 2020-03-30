@@ -1,0 +1,30 @@
+Viết chương trình thư viện:
+Tạo lớp SinhVien gồm các thuộc tính: Họ tên, tuổi, lớp, Mã số Sinh Viên
+	- Với: Lớp gồm có:
+		+ CTABB : CT là mã lớp, A là chữ cái từ A-Z, BB là chữ số từ 0-9
+		+ ATABBCC : AT là mã lớp, A là chữ cái từ A-Z, BB là chữ số từ 0-9, CC là chữ số từ 0-9 có thể có hoặc không
+	- Mã số sinh viên là số có 8 chữ số. Và phải là duy nhất.
+
+Tao lớp TheMuon gồm các thuộc tính: Mã phiếu mượn, Ngày mượn, Hạn trả, Số hiệu sách.
+	- Với: Mã phiếu mượn theo cú pháp: AABBCC
+		+ AA là chữ cái đầu tiên của tên lớp
+		+ BB là chữ số đầu tiên của mã sinh viên
+		+ CC là số tùy chọn từ 0-9
+	- Mã phiếu mượn là tên duy nhất
+	- Số hiệu sách theo cú pháp : AB
+		+ Với A là chữ từ A-Z
+		+ B là số từ 0-9
+Tạo lớp main với các chức năng:
+	1. Nhập thông tin sinh viên mượn sách
+	2. Hiển thị thông tin người mượn
+	3. Sửa thông tin người mượn theo mã phiếu mượn
+	4. Xóa thông tin người mượn
+	5. Tìm kiếm thông tin người mượn qua số hiệu sách
+	6. Tìm kiếm thông tin người mượn qua tên lớp
+	7. Sắp xếp người mượn theo chiều tăng dần theo tuổi
+	8. Sắp xếp người mượn theo chiều tăng dần theo hạn trả
+	9. Sắp xếp người mượn theo chiều tăng dần theo họ tên
+	10. Lưu tất cả thông tin vào file ThuVien.dat
+	11. Đọc thông tin từ file ThuVien.dat
+	12. Thoát.
+

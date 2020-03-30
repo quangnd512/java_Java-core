@@ -1,0 +1,25 @@
+Xây dựng chương trình quản lý khách sạn:
+Tạo lớp Nguoi với các thuộc tính: Họ tên, Tuổi, Số CMT.
+	- Với Số CMT theo yêu cầu là số có 8 chữ số. Và là số duy nhất.
+Tạo lớp KhachSan kế thừa từ lớp Nguoi với các thuộc tính sau: Số ngày thuê, loại phòng
+	- Với loại phòng chỉ được phép nhập ký tự A, B, hoặc C.
+Tạo lớp quản lý để quản lý thông tin khách sạn và tiền phòng của khách thuê.
+	- Với phòng loại A thì giá là 500$
+	- Với phòng loại B thì giá là 300$
+	- Với phòng loại C thì giá là 100$
+	- Tiền phòng = số ngày thuê nhân với giá của từng loại phòng.
+	
+Tạo lớp main với các chức năng sau:
+	1. Nhập thông tin người thuê phòng
+	2. Hiển thị thông tin khách thuê phòng
+	3. Sửa thông tin khách thuê phòng
+	4. Xóa thông tin khách thuê phòng
+	5. Tìm kiếm khách thuê phòng theo tên
+	6. Tính tiền khách thuê phòng theo số CMT
+	7. Sắp xếp khách thuê phòng theo tuổi
+	8. Sắp xếp khách thuê phòng theo tên
+	9. Sắp xếp khách thuê phòng theo số tiền từ cao xuống thấp
+	10. Lưu thông tin khách thuê phòng vào file khachSan.dat
+	11. Đọc thông tin từ file khachSan.dat
+	12. Hiển thị thông tin khách thuê theo loại phòng
+	13. Thoát

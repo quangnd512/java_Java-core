@@ -1,0 +1,18 @@
+Viết chương trình quản lý Trường học: 
+Tạo lớp HocSinh gồm các thuộc tính: Mã số học sinh, Họ tên, Tuổi, Quê quán.
+	- Với Mã số học sinh phải gồm 8 ký tự theo cú pháp: HSAAAAAA
+		+ HS là mã học sinh
+		+ AAAAAA là các số từ 0-9
+	- Mã học sinh là số duy nhất.
+Tạo lớp Truong kế thừa từ lớp HocSinh gồm các thuộc tính: lớp.
+
+Tạo lớp main với các chức năng sau:
+	1. Nhập thông tin học sinh
+	2. Hiển thị thông tin học sinh
+	3. Sửa thông tin học sinh theo mã số học sinh
+	4. Xóa học sinh theo mã số học sinh
+	5. Tìm kiếm thông học sinh có tuổi là 20
+	6. Sắp xếp học sinh theo tuổi theo chiều giảm
+	7. Lưu học sinh vào file hocSinh.txt
+	8. Đọc file hocSinh.txt
+	9. Thoát. 

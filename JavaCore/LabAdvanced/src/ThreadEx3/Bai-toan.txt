@@ -1,0 +1,21 @@
+Tạo một class VeMayBay có các thuộc tính sau: 
+	- Mã chuyến bay
+	- Tên chuyến bay
+	- Ngày bay
+	- Hành lý ký gửi
+	- Giá vé
+Mã chuyến bay được nhập vào cho 3 hãng bay hiện có ở Việt Nam, theo các quy ước sau:
+	- VJABB : Là mã chuyến bay của hãng VietjetAir, trong đó A là số nguyên từ 1-9, BB là các
+		 số từ 0-9
+	- VNABBC : Là mã chuyến bay của hãng Viet Nam Airline, trong đó A là số nguyên từ 1-9, BB là các 
+		số từ 0-9, C là các số nguyên từ 0-9 và có thể có hoặc không
+	- JETABB : Là mã chuyến bay của hãng JetStar, trong đó A và B dựa theo các quy tắc trên
+
+Tạo đầy đủ các constructors, các phương thức set/get và toString() cho lớp.
+
+Tạo lớp QuanLyBay có hàm main và thực hiện các công việc sau:
+	- Nhập vào thông tin cho n chuyến bay và mã chuyến bay theo quy ước trên.
+	- Lưu thông tin vừa nhập vào file: DuLieuBay.txt
+	- Đọc thông tin từ DuLieuBay.txt và hiển thị tất cả thông tin ra màn hình.
+	- Hiển thị thông tin sau khi đã sắp xếp giảm dần theo giá vé.
+	- In ra thông tin của mỗi hãng bay ra một file tương ứng.

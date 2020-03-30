@@ -1,0 +1,28 @@
+Viết chương trình quản lý cán bộ giáo viên gồm:
+Tạo lớp Nguoi với các thuộc tính: Họ tên, Tuổi, Quê quán, Mã số giáo viên.
+	- Với mã số giáo viên là số duy nhất và là số có 8 chữ số.
+
+Tạo lớp CBGV với các thuộc tính: Lương cứng, Lương thưởng, Tiền phạt, Hệ số thưởng. 
+	- Với điều kiện: 
+		+ Hệ số thưởng là từ 0.0->5.0
+		+ Tiền phạt không được vượt quá 20% lương cứng. 
+		+ Lương thưởng = Hệ số thưởng*(Lương cứng/10).
+
+Tạo lớp quản lý để quản ký thông tin giáo viên và tính lương thực lĩnh.
+	- Lương thực lĩnh = Lương cứng + Lương thưởng + Tiền phạt.
+
+Tạo lớp main với các chức năng sau: 
+	1. Nhập thông tin giáo viên
+	2. Hiển thị thông tin giáo viên
+	3. Sửa thông tin giáo viên
+	4. Xóa thông tin giáo viên
+	5. Sửa tiền lương giáo viên
+	6. Tìm kiếm giáo viên theo tên
+	7. Tìm kiếm giáo viên theo mã số giáo viên
+	8. Sắp xếp giáo viên theo Tên
+	9. Sắp xếp giáo viên theo tuổi tăng dần
+	10. Sắp xếp giáo viên theo lương thực lĩnh giảm dần
+	11. Lưu thông tin vào file CBGV.txt
+	12. Đọc thông tin từ file CBGV.txt
+	13. Thoát
+	

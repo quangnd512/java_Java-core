@@ -1,0 +1,15 @@
+Cho mot danh sach la ho ten cac sinh vien:
+	{Nguyen Ngoc Lan, Duong Tien Nam, Ngo Anh Quan, Pham Van Phuc, Tran Thi Ha}
+
+Mot danh sach la que tuong ung cua cac sinh vien: 
+	{Hai Phong, Ha Noi, Thai Nguyen, Ha Tinh, Quang Ninh}
+	
+Viet ung dung:
+
+Thread 1: Sau moi giay hien thi ten mot nguoi ung trong danh sach ten.
+
+Thread 2: Ngay sau do se hien thi que tuong ung cua nguoi do.
+
+Hai thread thuc hien moi 5 lan la dung lai
+
+Thread 1 phai luon chay truoc sau moi den thread 2

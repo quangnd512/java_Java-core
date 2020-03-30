@@ -1,0 +1,41 @@
+Tạo chương trình tuyển sinh:
+Tạo lớp ThiSinh gồm các thuộc tính: SBD, Họ tên, Địa chỉ, Email, Mức ưu tiên.
+	- Thuộc tính SBD phải tuân thủ yêu cầu sau:
+		+ SBD phải nhỏ hơn hoặc bằng 8 ký tự. Với cú pháp DHABBCCC
+		  Trong đó: 
+			DH : Là mã kỳ thi.
+			A : Mã khối thi. Khối A thì là A. Khối B là B, Khối C là C.
+			BB : Là ký tự số từ 0-9
+			CCC : Là ký tự số từ 0-9 hoặc chữ từ A-Z và có thể có hoăc không.
+		+ SBD phải là duy nhất.
+		+ Email phải có ký tự @.com
+		+ Mức ưu tiên : Từ 0.0 - 3.0
+		
+Tạo lớp Khối A kế thừa từ lớp ThiSinh gồm các thuộc tính: Toán, Lý, Hóa.
+	- Các thuộc tính Toán, Lý, Hóa phải từ 0-10.
+	
+Tạo lớp Khối B kế thừa từ lớp ThiSinh gồm các thuộc tính: Toán, Hóa, Sinh.
+	- Các thuộc tính Toán, Hóa, Sinh phải từ 0-10.
+	
+Tạo lớp Khối C kế thừa từ lớp ThiSinh gồm các thuộc tính: Văn, Sử, Địa.
+	- Các thuộc tính Văn, Sử, Địa phải từ 0-10.
+	
+Tạo phương thức khởi tạo có đối và không đối, và các phương thức set, get. Phuong thức nhập và hiển thị đối với 
+các lớp trên.
+	
+Tạo lớp QuanLy để viết các hàm cần thiết và tính tổng điểm các môn của từng khối
+
+Tạo lớp main gồm các chức năng sau:
+	1. Add thông tin thí sinh.
+	2. Hiển thị thông tin thí sinh
+	3. Sửa thông tin thí sinh
+	4. Xóa thông tin thí sinh
+	5. Sắp xếp theo tên thí sinh
+	5. Sắp xếp theo tổng điểm
+	6. Tìm kiếm theo số báo danh
+	7. Hiển thị những thí sinh đỗ ĐH với tổng điểm 3 môn là 18. Riêng khối A môn Toán phải trên 7 điểm
+	8. Hiển thị những thí sinh đỗ theo từng khối
+	9. Lưu thông tin sinh viên vào file sinhVien.dat
+	10. Đọc thông tin sinh viên từ file sinhVien.dat
+	11. Lưu thông tin sinh viên theo từng file của từng khối.
+	12. Thoát.
