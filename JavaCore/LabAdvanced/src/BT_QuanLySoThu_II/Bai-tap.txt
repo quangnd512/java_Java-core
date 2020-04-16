@@ -1,0 +1,40 @@
+1. Tạo lớp có tên Animal gồm các thuộc tính và phương thức: 
+	+ String Ten
+	+ int Tuoi
+	+ String MoTa
+	+ Void XemThongTin() //Hiển thị tên, tuổi và mô tả của động vật.
+	+ abstract void TiengKeu();
+
+2. Tạo một số hàm tạo cho lớp Animal như sau: 
+	+ 0 tham số
+	+ 1 tham số (Ten)
+	+ 2 tham số (Ten, Tuoi)
+	+ 3 tham số (Ten, Tuoi, MoTa)
+	
+3. Tạo các lớp Tiger, Dog, Cat theo các yêu cầu sau:
+	+ Kế thừa lớp Animal
+	+ Ghi đè phương thức TiengKeu() để thể hiện những tiếng kêu đặc trưng của từng loài vật.
+	
+4. Tạo lớp có tên Chuong gồm: 
+	+ int maChuong
+	+ ArrayList animalList;
+	+ void ThemConVat(Animal a)
+	+ void xoaConVat(String ten)
+	
+5. Tạo lớp có tên Zoo gồm:
+	+ ArrayList danhSachChuong
+	+ void themChuong(Chuong c)
+	+ void xoaChuong(int maChuong)
+	
+6. Tạo lớp main có các chức năng sau: 
+	1. Thêm chuồng
+	2. Xóa chuồng
+	3. Thêm con vật
+	4. Xóa con vật
+	5. Xem tất cả các con vật
+	6. Thoát
+	
+7. Khi người dùng chọn 3 thì yêu cầu người dùng nhập vào loại con vật muốn thêm. Rồi nhập các thông tin của con vật
+và thêm vào animalList
+
+8. Khi người dùng chọn 5 thì hiển thị thông tin cùng tiếng kêu của từng con vật trong sở thú.

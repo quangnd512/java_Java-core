@@ -1,0 +1,18 @@
+1. Thiết kế chương trình:
+	- Tạo giao diện thực hiện các chức năng: Thêm, sửa, xóa thông tin danh mục.
+	- Tạo giao diện thực hiện các chức năng: Thêm, sửa, xóa, tìm kiếm thông tin sản phẩm.
+	
+
+- Database
+	create table categories(
+		id int primary key auto_increment,
+		name varchar(100) not null
+	);
+
+	create table product (
+		id int primary key auto_increment,
+		name varchar(100) not null,
+		price int default 0,
+		description text,
+		id_category int references categories(id)
+	)

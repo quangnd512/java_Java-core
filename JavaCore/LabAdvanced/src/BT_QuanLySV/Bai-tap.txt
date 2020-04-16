@@ -1,0 +1,10 @@
+Thiết kế CSDL đặt tên là: quanlysinhvien
+Tạo 1 bảng students gồm các thuộc tính: rollno, fullname, gender, email, address
+Nhập vào bảng trên ít nhất 3 sinh viên.
+Thiết kế phần mềm có giao diện như anh1.png
+
+- Khi nhấn vào nút button search thì thực hiện các task sau:
+	+ Nếu RollNo để trống thì hiển thị message yêu cầu nhập rollno cần tìm kiếm
+	+ Nếu RollNo không trống -> Thực hiện tìm kiếm sinh viên trong csdl và hiển thị ra các trường trong form
+- Khi nhấn nút reset thì xóa toàn bộ dữ liệu trong form
+- Khi người dùng click vào nút update thì cập nhật dữ liệu trong CSDL và xóa tất cả các dữ liệu trong form 

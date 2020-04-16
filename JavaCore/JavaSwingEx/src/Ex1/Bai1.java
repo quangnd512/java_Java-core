@@ -2,9 +2,11 @@ package Ex1;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.FlowLayout;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.border.EmptyBorder;
 import net.miginfocom.swing.MigLayout;
 
@@ -17,10 +19,13 @@ import javax.swing.border.TitledBorder;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import java.awt.Font;
+import java.awt.GridLayout;
+
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -35,26 +40,29 @@ import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
+import com.mysql.cj.api.mysqla.result.Resultset;
+import com.mysql.cj.api.xdevapi.Result;
 import com.mysql.cj.jdbc.PreparedStatement;
+import com.mysql.cj.xdevapi.JsonParser;
 
 public class Bai1 extends JFrame {
 	
-	List<Student> studentList = new ArrayList<>();
-	DefaultTableModel tableModel;
-
 	private JPanel contentPane;
 	private JTextField hoTen;
 	private JTextField address;
 	private JTextField email;
 	private JTable tb_Student;
-
+	
+	List<Student> studentList = new ArrayList<>();
+	DefaultTableModel model;
+	
 	/**
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
+		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
-//				tableModel = (DefaultTableModel) ((AbstractButton) studentList).getModel();
 				try {
 					Bai1 frame = new Bai1();
 					frame.setVisible(true);
@@ -72,14 +80,14 @@ public class Bai1 extends JFrame {
 	 */
 	private void insertIntoDB(Student std) throws SQLException {
 		Connection conn = null;
-		java.sql.PreparedStatement stm = null;
+		PreparedStatement stm = null;
 		try {
 			//open connection to db
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/java_jdbc","root","");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/java_jdbc?serverTimezone=UTC","root","");
 			
 			//query
 			String sql = "insert into students(hoTen, address, email) values('"+std.hoTen+"','"+std.address+"','"+std.email+"')";
-			stm = conn.prepareStatement(sql);
+			stm = (PreparedStatement) conn.prepareStatement(sql);
 			stm.execute();
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -95,7 +103,52 @@ public class Bai1 extends JFrame {
 		} 
 	}
 	
-	public Bai1() {
+	//lay data
+	private void loadDatabase() throws SQLException {
+		studentList.clear(); //clear data in studentList
+		Connection conn = null;
+		Statement stm = null;
+		try {
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/java_jdbc?serverTimezone=UTC","root","");
+			
+			String getData = "select * from students";
+			
+			stm = conn.createStatement();
+			
+			ResultSet resul = stm.executeQuery(getData);
+			
+			while (resul.next()) {
+				Student std1 = new Student(
+						resul.getInt("id"), 
+						resul.getString("hoTen"), 
+						resul.getString("address"), 
+						resul.getString("email"));
+				studentList.add(std1);
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}finally {
+			conn.close();
+			stm.close();
+		}
+	}
+	
+	//lay data
+	private void showData() {
+		model.setRowCount(0); //Xoa toan bo du lieu trong bang
+		
+		//add data
+		for (int i = 0; i < studentList.size(); i++) {
+			model.addRow(new String [] {
+					studentList.get(i).hoTen, 
+					studentList.get(i).address, 
+					studentList.get(i).email
+					}
+			);
+		}
+	}
+
+	public Bai1() throws SQLException {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 429);
 		contentPane = new JPanel();
@@ -136,8 +189,10 @@ public class Bai1 extends JFrame {
 				String ad_email = email.getText().toString();
 				
 				Student std = new Student(ad_hoTen, ad_address, ad_email);
-				studentList.add(std); 
-//				tableModel.addRow(new String[]{ad_hoTen,ad_address,ad_email});
+				studentList.add(std);
+				
+				model.addRow(new String [] {ad_hoTen, ad_address, ad_email});
+				
 				System.out.println("Thong tin sinh vien: "+ad_hoTen+"; "+ad_address+", "+ad_email);
 				try {
 					insertIntoDB(std);
@@ -215,25 +270,31 @@ public class Bai1 extends JFrame {
 		tb_Student = new JTable();
 		tb_Student.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		tb_Student.setModel(new DefaultTableModel(
-			new Object[][] {
-			},
-			new String[] {
-				"H\u1ECD v\u00E0 t\u00EAn", "\u0110\u1ECBa ch\u1EC9", "Email"
-			}
-		) {
-			Class[] columnTypes = new Class[] {
-				String.class, String.class, String.class
-			};
-			public Class getColumnClass(int columnIndex) {
-				return columnTypes[columnIndex];
-			}
-		});
+				new Object[][] {
+				},
+				new String[] {
+					"Ho ten","Dia chi","Email"
+				}
+			) {
+				Class[] columnTypes = new Class[] {
+					String.class, String.class, String.class
+				};
+				public Class getColumnClass(int columnIndex) {
+					return columnTypes[columnIndex];
+				}
+			});
 		tb_Student.getColumnModel().getColumn(0).setPreferredWidth(230);
 		tb_Student.getColumnModel().getColumn(1).setPreferredWidth(231);
 		tb_Student.getColumnModel().getColumn(2).setPreferredWidth(161);
 		tb_Student.setToolTipText("");
 		tb_Student.setBackground(UIManager.getColor("Table.highlight"));
 		contentPane.add(tb_Student, BorderLayout.CENTER);
+		
+		
+		model = (DefaultTableModel) tb_Student.getModel();
+		
+		loadDatabase(); //lay data
+		showData(); //lay data
 	}
 
 }

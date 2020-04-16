@@ -1,12 +1,21 @@
 package Ex1;
 
+import javax.swing.JTextField;
+
 public class Student {
 	String hoTen;
 	String address;
 	String email;
-	public Student() {
-	}
+	int id;
+	
 	public Student(String hoTen, String address, String email) {
+		this.hoTen = hoTen;
+		this.address = address;
+		this.email = email;
+	}
+	
+	public Student(int id, String hoTen, String address, String email) {
+		this.id = id;
 		this.hoTen = hoTen;
 		this.address = address;
 		this.email = email;

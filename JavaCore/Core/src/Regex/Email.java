@@ -12,8 +12,7 @@ public class Email {
 		System.out.println("Nhap email: ");
 		String str = sc.nextLine();
 		
-		String StrPattern = "^[0-9]{1,2}[-|/][0-9]{1,2}[-|/][0-9]{4}$";
-//		String StrPattern1 = "\\d{1,2}[-|/]\\d{1,2}[-|/]\\d{4}";
+		String StrPattern = "^[a-zA-Z]+[-]?[\\w-]+[@]{1}[\\w]{2,}[.]{1}[a-z]{2,}$";
 		
 		
 		Pattern pt = Pattern.compile(StrPattern);
@@ -26,3 +25,4 @@ public class Email {
 	}
 
 }
+
