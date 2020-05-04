@@ -7,8 +7,7 @@ Tạo lớp ThiSinh gồm các thuộc tính: SBD, Họ tên, Địa chỉ, Emai
 			A : Mã khối thi. Khối A thì là A. Khối B là B, Khối C là C.
 			BB : Là ký tự số từ 0-9
 			CCC : Là ký tự số từ 0-9 hoặc chữ từ A-Z và có thể có hoăc không.
-		+ SBD phải là duy nhất.
-		+ Email phải có ký tự @.com
+		+ Email phải có ký tự @gmail.com
 		+ Mức ưu tiên : Từ 0.0 - 3.0
 		
 Tạo lớp Khối A kế thừa từ lớp ThiSinh gồm các thuộc tính: Toán, Lý, Hóa.
@@ -28,14 +27,12 @@ Tạo lớp QuanLy để viết các hàm cần thiết và tính tổng điểm
 Tạo lớp main gồm các chức năng sau:
 	1. Add thông tin thí sinh.
 	2. Hiển thị thông tin thí sinh
-	3. Sửa thông tin thí sinh
-	4. Xóa thông tin thí sinh
-	5. Sắp xếp theo tên thí sinh
-	5. Sắp xếp theo tổng điểm
-	6. Tìm kiếm theo số báo danh
-	7. Hiển thị những thí sinh đỗ ĐH với tổng điểm 3 môn là 18. Riêng khối A môn Toán phải trên 7 điểm
-	8. Hiển thị những thí sinh đỗ theo từng khối
+	3. Sửa thông tin thí sinh theo so bao danh
+	4. Xóa thông tin thí sinh theo so bao danh
+	5. Sắp xếp thi sinh theo tên thí sinh
+	6. Sắp xếp theo tong diem tung khoi
+	7. Tìm kiếm theo số báo danh
+	8. Hiển thị những thí sinh đỗ ĐH của từng khối với tổng điểm 3 môn là 18. Riêng khối A môn Toán phải trên 7 điểm
 	9. Lưu thông tin sinh viên vào file sinhVien.dat
 	10. Đọc thông tin sinh viên từ file sinhVien.dat
-	11. Lưu thông tin sinh viên theo từng file của từng khối.
-	12. Thoát.
+	11. Thoát.

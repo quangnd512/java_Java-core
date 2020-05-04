@@ -1,0 +1,87 @@
+[
+	{
+		"information": {
+			"name" : "QL1",
+			"address" : "Ha Noi"
+		},
+		"studentList": [
+			{
+				"fullname":"Nguyen Van A",
+				"birthday":"01-01-1996",
+				"email": "abc@gmail.com",
+				"address": "Ha Noi",
+				"gender": "Nam"
+			},
+			{
+				"fullname":"Nguyen Van B",
+				"birthday":"01-01-1995",
+				"email": "abc1@gmail.com",
+				"address": "Ha Noi",
+				"gender": "Nam"
+			},
+			{
+				"fullname":"Nguyen Van C",
+				"birthday":"01-01-1998",
+				"email": "abc2@gmail.com",
+				"address": "Ha Noi",
+				"gender": "Nam"
+			}
+		]
+	},{
+		"information": {
+			"name" : "QL2",
+			"address" : "HCM"
+		},
+		"studentList": [
+			{
+				"fullname":"Nguyen Van D",
+				"birthday":"01-01-1996",
+				"email": "abc@gmail.com",
+				"address": "HCM",
+				"gender": "Nam"
+			},
+			{
+				"fullname":"Nguyen Van E",
+				"birthday":"01-01-1996",
+				"email": "abc@gmail.com",
+				"address": "HCM",
+				"gender": "Nam"
+			},
+			{
+				"fullname":"Nguyen Van F",
+				"birthday":"01-01-1996",
+				"email": "abc@gmail.com",
+				"address": "HCM",
+				"gender": "Nam"
+			}
+		]
+	},{
+		"information": {
+			"name" : "QL3",
+			"address" : "Hai Phong"
+		},
+		"studentList": [
+			{
+				"fullname":"Nguyen Van G",
+				"birthday":"01-01-1996",
+				"email": "abc@gmail.com",
+				"address": "Hai Phong",
+				"gender": "Nam"
+			},
+			{
+				"fullname":"Nguyen Van H",
+				"birthday":"01-01-1996",
+				"email": "abc@gmail.com",
+				"address": "Hai Phong",
+				"gender": "Nam"
+			},
+			{
+				"fullname":"Nguyen Van I",
+				"birthday":"01-01-1996",
+				"email": "abc@gmail.com",
+				"address": "Hai Phong",
+				"gender": "Nam"
+			}
+		]
+	}
+]

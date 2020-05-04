@@ -3,7 +3,7 @@ package Bai3;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Main {
+public class Main { 
 
 	public static void showMenu() {
 		System.out.println("1. Add thong tin sach.");

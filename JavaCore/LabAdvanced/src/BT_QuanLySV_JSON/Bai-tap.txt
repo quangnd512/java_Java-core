@@ -1,0 +1,21 @@
+1. Tạo lớp đối tượng sinh viên gồm các thuộc tính: fullname, birthday, email, address, gender.
+	- Tạo hàm không đối và có đầy đủ đối số
+	- Tạo hàm getter và setter
+	- Tạo hàm nhập và hiển thị sinh viên
+	
+2. Tạo đối tượng lớp học gồm các thuộc tính: name, address và mảng danh sách sinh viên
+	- Tạo hàm không đối
+	- Tạo getter và setter
+	- Tạo hàm nhập và hiển thị sinh viên
+	
+3. Tạo lớp main chứa các đối tượng lớp học
+
+4. Xây dựng menu chương trình
+	1. Nhập thông tin sinh viên từ file json
+	2. Hiển thị thông tin sinh viên
+	3. Lưu thông tin mỗi lớp học vào 1 file then_lop.obj
+	
+Chú thích: 
+	Khi người dùng chọn 1 : Thực hiện đọc dữ liệu từ file data.json và lưu thông tin đọc vào mảng classList
+	Khi người dùng chọn 2 : Hiển thị thông tin lớp học từ mảng classList
+	Khi người dùng chọn 3 : Thực hiện lưu thông tin từng lớp học vào 1 file tương ứng

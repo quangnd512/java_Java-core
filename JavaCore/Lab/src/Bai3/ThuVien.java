@@ -47,20 +47,20 @@ public class ThuVien implements Serializable{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Nhap ma tai lieu: ");
 		while (true) {
-			String maTL = sc.nextLine();
+			maTaiLieu = sc.nextLine();
 			String pStr = "";
-			if (maTL.startsWith("TC")) {
+			if (maTaiLieu.startsWith("TC")) {
 				pStr = "TC[0-9]{1}[A-Z]{1}[0-9]?";
-			}else if(maTL.startsWith("S")) {
+			}else if(maTaiLieu.startsWith("S")) {
 				pStr = "S[0-9]{1}[A-Z]{1}";
-			}else if(maTL.startsWith("B")) {
+			}else if(maTaiLieu.startsWith("B")) {
 				pStr = "B[0-9]{1}[A-Z]{1}[0-9]{2}";
 			}else {
 				System.err.println("Nhap sai cu phap.!");
 				continue;
 			}
 			Pattern pattern = Pattern.compile(pStr);
-			Matcher matcher = pattern.matcher(maTL);
+			Matcher matcher = pattern.matcher(maTaiLieu);
 			if (matcher.find()) {
 				break;
 			}else {

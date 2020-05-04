@@ -2,11 +2,6 @@ package Bai6_II;
 
 import java.util.Scanner;
 
-import Bai3_II.KhoiA;
-import Bai3_II.KhoiB;
-import Bai3_II.KhoiC;
-import Bai3_II.TuyenSinh;
-
 public class Main {
 
 	public static void main(String[] args) {

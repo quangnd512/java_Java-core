@@ -1,6 +1,6 @@
 Viết chương trình quản lý khu phố gồm: 
 Lớp ConNguoi gồm các thuộc tính sau: Họ tên, Tuổi, Nghề nghiệp, Số CMT với:
-	- Số CMT phải là số và có tối thiểu 6 số, tối đa 8 số. Và phải là duy nhất.
+	- Số CMT phải là số và có tối thiểu 6 số, tối đa 8 số.
 
 Lớp HoGiaDinh gồm các thuộc tính sau: Số thành viên, Số nhà với:
 	- Một hộ gia đình có thể có nhiều thành viên
@@ -17,6 +17,6 @@ Lớp main gồm các chức năng sau:
 	1. Thêm hộ gia đình vào khu phố
 	2. Hiển thị số hộ gia đình trong khu phố
 	3. Hiển thị thông tin các hộ gia đình
-	4. Sửa thông tin hộ gia đình.
+	4. Sửa thông tin hộ gia đình theo so nha.
 	5. Lưu thông tin khu phố vào file KhuPho.obj
 	6. Đọc thông tin từ file KhuPho.obj
