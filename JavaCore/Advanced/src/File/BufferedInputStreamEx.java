@@ -24,15 +24,16 @@ public class BufferedInputStreamEx {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally {
-			try {
-				fileInput.close();
-				bf.close();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		}
+//		finally {
+//			try {
+//				fileInput.close();
+//				bf.close();
+//			} catch (IOException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//		}
 		
 	}
 

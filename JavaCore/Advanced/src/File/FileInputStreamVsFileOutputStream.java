@@ -23,7 +23,8 @@ public class FileInputStreamVsFileOutputStream {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally {
+		}
+		finally {
 			try {
 				fileInput.close();
 			} catch (IOException e) {

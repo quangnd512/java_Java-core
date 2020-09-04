@@ -5,6 +5,12 @@
 		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Administrator\Desktop\KTLT\TH\Java\Core_Java\src\TH4_Bai1"/>
+			<item value="C:\Users\Administrator\Desktop\KTLT\TH\Java\Core_Java\src\TH5_Bai2"/>
+			<item value="C:\Users\Administrator\Desktop\KTLT\TH\Java\Core_Java\src\TH5_Bai1"/>
+			<item value="D:\Desktop\github\java_Java-core"/>
+		</list>
 	</section>
 	<section name="NewWizardAction">
 	</section>
